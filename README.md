@@ -1,5 +1,65 @@
-# Vue 3 + TypeScript + Vite
+# Tasks App
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+A simple task management application built with Vue 3, TypeScript, and Vite. This app demonstrates component-based architecture, state management, and modern frontend tooling.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+**This app is based on a YouTube video by the channel called Syntax.**
+
+## Features
+- Add, filter, and list tasks
+- Component-based structure (`TaskForm`, `TaskList`, `FilterButton`)
+- TypeScript support
+- Fast development with Vite
+
+## Project Structure
+```
+├── public/                # Static assets
+├── src/
+│   ├── App.vue            # Main app component
+│   ├── main.ts            # App entry point
+│   ├── style.css          # Global styles
+│   ├── types.ts           # TypeScript types
+│   ├── components/
+│   │   ├── FilterButton.vue
+│   │   ├── TaskForm.vue
+│   │   └── TaskList.vue
+│   └── assets/            # App assets
+├── index.html             # HTML entry point
+├── package.json           # Project metadata and scripts
+├── tsconfig*.json         # TypeScript configuration
+├── vite.config.ts         # Vite configuration
+└── README.md              # Project documentation
+```
+
+## Getting Started
+
+### Prerequisites
+- Node.js (v16+ recommended)
+- pnpm (or npm/yarn)
+
+### Install dependencies
+```bash
+pnpm install
+```
+
+### Start development server
+```bash
+pnpm dev
+```
+
+### Build for production
+```bash
+pnpm build
+```
+
+### Preview production build
+```bash
+pnpm preview
+```
+
+## Learn More
+- [Vue 3 Documentation](https://vuejs.org/)
+- [Vite Documentation](https://vitejs.dev/)
+- [TypeScript Documentation](https://www.typescriptlang.org/)
+
+## License
+MIT
